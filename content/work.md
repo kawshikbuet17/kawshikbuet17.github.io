@@ -2,7 +2,7 @@
 
 ### Software Engineer
 **REVE Systems** — Dhaka, Bangladesh  
-*[May 2024 – Present · 2 yrs]*
+*[May 2024 – Present]*
 
 - Full-time software development role at REVE Systems
 - Working on [Airtel Advantage](https://airtel-advantage.airtel.in/) project - developing DID Numbering solutions
@@ -14,7 +14,7 @@
 
 ### Programmer, Automated ICT Project
 **Grameen Bank** — Mirpur, Dhaka, Bangladesh  
-*[Jun 2023 – Mar 2024 · 10 mos]*
+*[Jun 2023 – Mar 2024]*
 
 - Engaged in the development of an Automated ICT System Project at Grameen Bank, a microfinance organization and community development bank
 - Played a pivotal role in the timely delivery of a Microfinance software solution and a Human Resource Management Solution within a stringent deadline
@@ -26,7 +26,7 @@
 
 ### Course Instructor (MySQL)
 **Programming Hero** — Bangladesh  
-*[Feb 2023 – Mar 2023 · 2 mos]*
+*[Feb 2023 – Mar 2023]*
 
 - Worked as Database (MySQL) Course Instructor at this leading EdTech platform
 - Taught database concepts and MySQL to students
