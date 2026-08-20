@@ -1,0 +1,35 @@
+type = "about"
+title = "About"
+
+[profile]
+research_interests = [
+  "Large Language Models (LLM) & NLP — Internals, Finetuning & Applications",
+  "Speech AI — Text-to-Speech (TTS) & Automatic Speech Recognition (ASR)",
+  "Computer Vision & Human-Computer Interaction (HCI)",
+  "AI/ML Applications in Software Systems",
+  "Computer Security",
+  "Software Engineering & Distributed Systems"
+]
+
+# Configurable labels for the About page sidebar
+[profile.labels]
+research_interests = "Research Interests"
+work_address = "Work Address"
+email = "Email"
+send_email = "Send Email"
+like = "Like"
+liked = "Liked"
+thanks = "Thanks"
+
+[[sections]]
+id = "about"
+type = "markdown"
+source = "bio.md"
+title = "About"
+
+[[sections]]
+id = "news"
+type = "list"
+title = "News"
+source = "news_data.toml"
+

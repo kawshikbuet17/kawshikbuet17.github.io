@@ -1,0 +1,4 @@
+type = "text"
+title = "Education"
+description = "Academic background and qualifications"
+source = "education.md"

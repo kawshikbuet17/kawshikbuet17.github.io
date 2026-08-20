@@ -1,0 +1,4 @@
+type = "text"
+title = "Skills"
+description = "Technical skills and competencies"
+source = "skills.md"

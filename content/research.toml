@@ -1,0 +1,4 @@
+type = "publication"
+title = "Research"
+description = "Ongoing research, published papers, and preprints"
+source = "publications.bib"

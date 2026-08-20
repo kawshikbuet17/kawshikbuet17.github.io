@@ -1,0 +1,101 @@
+[site]
+title = "Kawshik Kumar Paul"
+description = "Software Engineer and Researcher looking to pursue higher studies (MS/PhD) in Artificial Intelligence and Software Engineering, with a focus on Large Language Models, NLP, Computer Vision, Speech AI, HCI, Computer Security, and Distributed Systems."
+favicon = "/favicon.svg"
+last_updated = "August 2026"
+
+[author]
+name = "Kawshik Kumar Paul"
+title = "Software Engineer | Researcher"
+institution = "B.Sc. Engg. (CSE), BUET"
+workplace = "Software Engineer at REVE Systems"
+avatar = "/bio.jpg"
+
+[social]
+# Contact information (leave blank or delete to hide)
+email = "kawshikbuet17@gmail.com"
+location = "Dhaka, Bangladesh"
+location_url = "https://maps.google.com"
+location_details = [
+  "Dhaka",
+  "Bangladesh"
+]
+google_scholar = "https://scholar.google.com/citations?user=VeJssHcAAAAJ&hl=en"
+research_gate = "https://www.researchgate.net/profile/Kawshik-Kumar-Paul"
+orcid = "https://orcid.org/my-orcid?orcid=0009-0002-4024-0626"
+github = "https://github.com/kawshikbuet17"
+huggingface = "https://huggingface.co/kawshikbuet17"
+linkedin = "https://linkedin.com/in/kawshikbuet17"
+
+[features]
+# Show a like button on the about page
+enable_likes = false
+
+# Display all subpages on a single page
+enable_one_page_mode = false
+
+[i18n]
+enabled = false
+locales = ["en"]
+default_locale = "en"
+mode = "fixed"
+fixed_locale = "en"
+persist = false
+switcher = false
+
+[i18n.labels]
+en = "English"
+
+[[navigation]]
+title = "About"
+type = "page"
+target = "about"
+href = "/"
+
+[[navigation]]
+title = "Education"
+type = "page"
+target = "education"
+href = "/education"
+
+[[navigation]]
+title = "Work"
+type = "page"
+target = "work"
+href = "/work"
+
+[[navigation]]
+title = "Research"
+type = "page"
+target = "research"
+href = "/research"
+
+[[navigation]]
+title = "Projects"
+type = "page"
+target = "projects"
+href = "/projects"
+
+[[navigation]]
+title = "Skills"
+type = "page"
+target = "skills"
+href = "/skills"
+
+[[navigation]]
+title = "Contribution"
+type = "page"
+target = "contribution"
+href = "/contribution"
+
+[[navigation]]
+title = "News"
+type = "page"
+target = "news"
+href = "/news"
+
+[[navigation]]
+title = "CV"
+type = "page"
+target = "cv"
+href = "/cv"

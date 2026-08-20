@@ -1,0 +1,238 @@
+type = "card"
+title = "Contribution"
+description = "Open source contributions, technical writings, and community involvement"
+
+[[sections]]
+id = "open_source"
+title = "Open Source Contributions"
+description = "Contributions to open source projects and libraries, spanning Speech AI — Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) — plus LLMs and Java tooling"
+
+[[sections.items]]
+title = "k2-fsa/OmniVoice — LoRA Finetuning Pull Request"
+subtitle = "Contributor — First LoRA Finetuning Implementation for TTS"
+date = "2026"
+content = """
+Contributed the first LoRA (Low-Rank Adaptation) finetuning implementation to this large open-source TTS repository, built on Xiaomi's OmniVoice model.
+
+**Links:** [Pull Request #243](https://github.com/k2-fsa/OmniVoice/pull/243)
+"""
+tags = ["TTS", "LoRA", "Speech AI", "Finetuning", "Open Source", "Python"]
+
+[[sections.items]]
+title = "Bengali CosyVoice3 TTS: Finetuned Text-to-Speech Model"
+subtitle = "Finetuned Model & Live Demo"
+date = "2026-06"
+content = """
+Finetuned CosyVoice3, an LLM-based Text-to-Speech model, to add Bengali support that the base model did not have by default, published as an open model with a public HuggingFace Space demo.
+
+**Links:** [Model](https://huggingface.co/kawshikbuet17/bengali-cosyvoice3-tts) | [Live Demo](https://huggingface.co/spaces/kawshikbuet17/bengali-cosyvoice3-tts-demo)
+"""
+tags = ["TTS", "Bengali", "CosyVoice3", "HuggingFace", "Speech AI"]
+
+[[sections.items]]
+title = "Bengali Orpheus TTS: Finetuned Text-to-Speech Adapter"
+subtitle = "Finetuned LoRA Adapter"
+date = "2026"
+content = """
+Finetuned a LoRA adapter adapting Orpheus, an LLM-based TTS model, for Bengali speech synthesis, published on HuggingFace with a public HuggingFace Space demo.
+
+**Links:** [Model](https://huggingface.co/kawshikbuet17/bengali-orpheus-tts-adapter) | [Live Demo](https://huggingface.co/spaces/kawshikbuet17/bengali-orpheus-tts-demo)
+"""
+tags = ["TTS", "Bengali", "Orpheus", "LoRA", "HuggingFace", "Speech AI"]
+
+[[sections.items]]
+title = "tts-playground"
+subtitle = "Creator & Maintainer"
+date = "2026"
+content = """
+An open-source benchmarking playground for comparing different Text-to-Speech (TTS) systems side by side, evaluating quality, voice fidelity, and performance — including Real-Time Factor (RTF) and inference latency across models.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/tts-playground)
+"""
+tags = ["TTS", "Benchmarking", "Speech AI", "Open Source", "Python"]
+
+[[sections.items]]
+title = "audio.cpp — OmniVoice Benchmarking & Testing Pull Request"
+subtitle = "Contributor"
+date = "2026-08"
+content = """
+Added benchmark scripts and a Python-to-C++ integration test for OmniVoice (a voice cloning model) in audio.cpp, a C++ audio inference engine for TTS and voice cloning. Benchmarked weight-type configurations across inference step counts on an RTX 4090, finding f16 generator weights ~1.26x faster than native, and documenting a runtime audio-tokenizer weight type that produced unusable audio.
+
+**Links:** [Pull Request #269](https://github.com/0xShug0/audio.cpp/pull/269)
+"""
+tags = ["TTS", "C++", "Benchmarking", "Speech AI", "Open Source"]
+
+[[sections.items]]
+title = "ElevenLabs Speech Dataset Builder"
+subtitle = "Creator & Maintainer"
+date = "2025"
+content = """
+An open-source tool for generating paired male/female speech datasets from Bengali text scripts using the ElevenLabs Text-to-Speech (TTS) API, with emotion/tone control tags and resume support — built for TTS and Automatic Speech Recognition (ASR) model training workflows.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/elevenlabs-speech-dataset-builder)
+"""
+tags = ["TTS", "ASR", "Speech AI", "Dataset", "Bengali", "Python", "Open Source"]
+
+[[sections.items]]
+title = "Webshop Qwen2.5-0.5B Triggered Brand-Bias Adapter"
+subtitle = "Finetuned LLM Adapter & Live Demo"
+date = "2026"
+content = """
+Finetuned a LoRA adapter to study triggered brand-bias behavior in an LLM-driven webshop agent, published with a live demo.
+
+**Links:** [Model](https://huggingface.co/kawshikbuet17/webshop-qwen2.5-0.5b-triggered-brand-bias-adapter) | [Live Demo](https://huggingface.co/spaces/kawshikbuet17/webshop-qwen2.5-0.5b-triggered-brand-bias-demo)
+"""
+tags = ["LLM", "LoRA", "Finetuning", "HuggingFace", "AI Safety"]
+
+[[sections.items]]
+title = "Open Dataset & Quantized Model Publishing"
+subtitle = "Datasets, Quantized Models & Demos on HuggingFace"
+date = "2025 - Present"
+content = """
+Actively publish curated datasets and quantized model variants on HuggingFace, with several thousand+ downloads in total across published artifacts.
+
+**Links:** [HuggingFace Profile](https://huggingface.co/kawshikbuet17)
+"""
+tags = ["HuggingFace", "Datasets", "Quantization", "Open Source"]
+
+[[sections.items]]
+title = "JUnit Framework"
+subtitle = "Contributor"
+date = "2025"
+content = """
+Contributed to the JUnit testing framework - one of the most widely used testing frameworks in the Java ecosystem.
+
+**Links:** [Pull Request](https://github.com/junit-team/junit-framework/pull/5561)
+"""
+tags = ["Java", "Testing", "JUnit", "Open Source"]
+
+[[sections.items]]
+title = "SemanticAIMapper"
+subtitle = "Creator & Maintainer"
+date = "2024 - Present"
+content = """
+Developed and published as open-source library: SemanticAIMapper - a deterministic-first semantic mapping mechanism using structured LLM planning and validation. The library helps align multiple structured representations across storage, interfaces, messaging, analytics, and application layers using bounded LLM planning.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/SemanticAIMapper) | [GitHub Package](https://github.com/kawshikbuet17/SemanticAIMapper/packages/2919544) | [Maven Central](https://central.sonatype.com/artifact/io.github.kawshikbuet17.semanticaimapper/semantic-ai-mapper-parent)
+"""
+tags = ["Java", "LLM", "Semantic Mapping", "Open Source", "Maven"]
+
+[[sections.items]]
+title = "THAI - Two-Phase Hybrid Asynchronous Inspection"
+subtitle = "Creator & Maintainer"
+date = "2024 - Present"
+content = """
+Developed and published as open-source library: THAI - a latency-agnostic framework for intelligent malicious HTTP request detection using Large Language Models. The framework provides a two-phase mechanism for WAF/IDS systems with multi-request batching that reduces LLM overhead by 90%+.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/HTTP-Abuse-Inspector-LLM) | [GitHub Package](https://github.com/kawshikbuet17/HTTP-Abuse-Inspector-LLM/packages/2930868) | [Maven Central](https://central.sonatype.com/artifact/io.github.kawshikbuet17.http-abuse-inspector-llm/http-abuse-inspector-llm)
+"""
+tags = ["Java", "Cybersecurity", "LLM", "Web Security", "Open Source", "Maven"]
+
+[[sections.items]]
+title = "AutoTestGen — Ground-Truth Test Suite Contribution"
+subtitle = "Contributor — Evaluation & Validation"
+date = "2026-03"
+content = """
+Contributed ground-truth test suites and assisted with evaluation and validation for AutoTestGen, a multi-agent LLM-based pipeline for end-to-end web test generation, an undergraduate thesis supervised by [Sukarna Barua](https://cse.buet.ac.bd/faculty/faculty_detail/sukarnabarua), Associate Professor at BUET CSE.
+"""
+tags = ["LLM", "Automated Testing", "Multi-Agent Systems", "Open Source"]
+
+[[sections]]
+id = "technical_articles"
+title = "Technical Articles & Publications"
+description = "Articles and technical publications on software architecture, networking, and system design"
+
+[[sections.items]]
+title = "Two-Phase Hybrid Asynchronous Inspection (THAI): A Latency-Agnostic Framework for Intelligent Malicious HTTP Request Detection using Large Language Models"
+subtitle = "Preprint Article"
+date = "2026"
+content = """
+Architectural framework for intelligent malicious HTTP request detection using LLMs with two-phase mechanism (deterministic pre-filtering + async LLM confirmation). Multi-request batching reduces LLM overhead by 90%+ while eliminating 98% of false positives.
+
+**Topics:** Cybersecurity, LLM, HTTP Security, Machine Learning
+
+**Links:** [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6730801)
+"""
+tags = ["Cybersecurity", "LLM", "Web Security", "Article"]
+
+[[sections.items]]
+title = "Generic, Policy-Aware CRUD Scaffolding Architecture for Object-Oriented Systems"
+subtitle = "Preprint Article"
+date = "2024"
+content = """
+Object-oriented design for CRUD scaffolding with reusable, type-parameterized base components. Features template-based Controller-Service-DAO pattern with navigable retrieval.
+
+**Topics:** Software Architecture, CRUD, Scaffolding, Object-Oriented Design
+
+**Links:** [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6812558)
+"""
+tags = ["Software Architecture", "CRUD", "Java", "Article"]
+
+[[sections.items]]
+title = "NS-3 Implementation and Performance Evaluation of Congestion-Control AODV for MANETs"
+subtitle = "Preprint Article"
+date = "2022"
+content = """
+Full implementation of Congestion-Control AODV (CC-AODV) in NS-3 simulator with performance evaluation. CC-AODV improves throughput and packet delivery ratio in denser networks through congestion-aware route discovery.
+
+**Topics:** MANET, AODV, Congestion Control, Network Simulation
+
+**Links:** [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6812538)
+"""
+tags = ["Networking", "NS-3", "Routing", "Article"]
+
+[[sections.items]]
+title = "SemanticAIMapper: Deterministic-First Semantic Mapping through Structured LLM Planning and Validation"
+subtitle = "Preprint Article"
+date = "2024"
+content = """
+Deterministic-first semantic mapping mechanism using bounded LLM planning. Resolves structured data alignment across storage, interfaces, messaging, and analytics layers with validated output schemas.
+
+**Topics:** LLM, Semantic Mapping, AI Planning, Structured Output
+
+**Links:** [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6812598)
+"""
+tags = ["LLM", "Semantic Mapping", "AI Planning", "Article"]
+
+[[sections.items]]
+title = "Occupations Hardest for AI to Fully Replace in Developing and Lower-Income Countries"
+subtitle = "Preprint Article"
+date = "2026"
+content = """
+Analysis of which occupations in developing and lower-income economies are most resistant to full automation by AI.
+
+**Topics:** AI, Labor Economics, Automation, Developing Economies
+
+**Links:** [SSRN](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=6648398)
+"""
+tags = ["AI", "Labor Economics", "Automation", "Article"]
+
+[[sections]]
+id = "peer_review"
+title = "Academic Service"
+description = "Certifications and academic contributions"
+
+[[sections.items]]
+title = "Coursera Deep Learning Specialization"
+subtitle = "Professional Certification - deeplearning.ai"
+date = "2025"
+content = """
+Completed the Deep Learning Specialization on Coursera, covering neural networks, hyperparameter tuning, convolutional networks, sequence models, and practical ML project structuring. The specialization provides hands-on experience with TensorFlow and modern deep learning architectures.
+
+**Link:** [Course Certificate](https://kawshikbuet17.github.io/Coursera-Deep-Learning/)
+"""
+tags = ["Deep Learning", "Machine Learning", "Certification", "Coursera"]
+
+[[sections]]
+id = "community"
+title = "Community & Events"
+description = "Event organizing and community involvement"
+
+[[sections.items]]
+title = "BUET CSE Fest 2022 — Photography Exhibition"
+subtitle = "Organizer & Judge"
+date = "2022"
+content = """
+Singlehandedly organized the photography exhibition at BUET CSE Fest 2022 — managed participant submissions, judged and scored entries, and awarded prizes to winners.
+"""
+tags = ["Event Organizing", "Community", "Photography", "BUET"]

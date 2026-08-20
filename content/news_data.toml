@@ -1,0 +1,103 @@
+[[news]]
+date = "2026-08"
+content = "Submitted \"TroBot: A Trojan Attack Using a Chatbot\" to [NSysS 2026](https://cse.buet.ac.bd/nsyss2026/) (13th International Conference on Next-generation Computing, Communication, Systems and Security)"
+
+[[news]]
+date = "2026-08"
+content = "Contributed the first LoRA (Low-Rank Adaptation) finetuning implementation to [k2-fsa/OmniVoice](https://github.com/k2-fsa/OmniVoice/pull/243), a large open-source TTS repository built on Xiaomi's OmniVoice model"
+
+[[news]]
+date = "2026-08"
+content = "Submitted \"A Low-Cost ATmega32-Based Embedded System for Automated Patient Queue and Health Data Management in Private Medical Chambers\" to [NSysS 2026](https://cse.buet.ac.bd/nsyss2026/) (13th International Conference on Next-generation Computing, Communication, Systems and Security)"
+
+[[news]]
+date = "2026-07"
+content = "Formed and began supervising a small team building open-source software for learning purposes — a volunteer effort, still in its early stages"
+
+[[news]]
+date = "2026-07"
+content = "Submitted \"The Choice Can Be the Attack: Auditing Aligned Backdoors in LLM Agents\" to [TACL](https://transacl.org/) (Transactions of the Association for Computational Linguistics)"
+
+[[news]]
+date = "2026-06"
+content = "Published a finetuned Bengali Text-to-Speech (TTS) [model (CosyVoice3)](https://huggingface.co/kawshikbuet17/bengali-cosyvoice3-tts) on HuggingFace, adding Bengali support the base model didn't originally have, along with a public [HuggingFace Space demo](https://huggingface.co/spaces/kawshikbuet17/bengali-cosyvoice3-tts-demo) open to everyone"
+
+[[news]]
+date = "2026-03"
+content = "Acknowledged in \"AutoTestGen: A Multi-Agent LLM Based Pipeline for End-to-End Web Test Generation from Natural Language Descriptions\" for developing ground-truth test suites and assisting with evaluation and validation — an undergraduate thesis project supervised by [Sukarna Barua](https://cse.buet.ac.bd/faculty/faculty_detail/sukarnabarua) at BUET CSE"
+
+[[news]]
+date = "2026-01"
+content = "Began writing a book on interview preparation for entry-level software engineering jobs in Bangladesh — ongoing"
+
+[[news]]
+date = "2025-01"
+content = "Recognized with a salary increment for outstanding performance"
+
+[[news]]
+date = "2024-05"
+content = "Joined [REVE Systems](https://www.revesoft.com/) as a Software Engineer"
+
+[[news]]
+date = "2023-07"
+content = "Received an offer for Software Engineer position at [Samsung R&D Bangladesh](https://research.samsung.com/srbd)"
+
+[[news]]
+date = "2023-06"
+content = "Began working as a Software Programmer on a project with [Grameen Bank](https://grameenbank.org.bd/)"
+
+[[news]]
+date = "2023-05"
+content = "Graduated with B.Sc. in Computer Science and Engineering (CSE) from [BUET](https://cse.buet.ac.bd/)"
+
+[[news]]
+date = "2023-05"
+content = "Defended undergraduate thesis on a [patient-centric blockchain framework for secure electronic health record management](/research), ahead of graduating"
+
+[[news]]
+date = "2018-03"
+content = "Commenced undergraduate studies in Computer Science and Engineering at [BUET](https://cse.buet.ac.bd/)"
+
+[[news]]
+date = "2017-11"
+content = "Got admitted to [Bangladesh University of Engineering and Technology (BUET)](https://cse.buet.ac.bd/) in Computer Science and Engineering"
+
+[[news]]
+date = "2017-10"
+content = "Achieved 86th rank in BUET admission test - the most difficult engineering admission exam in Bangladesh with over 100,000 applicants competing for 1,100 available seats"
+
+[[news]]
+date = "2017-10"
+content = "Qualified for admission to a Public Medical College - the most difficult medical college admission in Bangladesh with over 100,000 applicants competing for only 3,200 available seats nationwide"
+
+[[news]]
+date = "2017-09"
+content = "Achieved qualifying rank for University of Dhaka - the top university for honors programs in Bangladesh with over 100,000 applicants competing for 1,500 available seats"
+
+[[news]]
+date = "2017-08"
+content = "Awarded Board Scholarship in Higher Secondary School Certificate (HSC) examination with Golden GPA 5.00"
+
+[[news]]
+date = "2015-06"
+content = "Awarded Board Scholarship in Secondary School Certificate (SSC) examination with Golden GPA 5.00"
+
+[[news]]
+date = "2012-12"
+content = "Completed Junior School Certificate (JSC) examination with Golden GPA 5.00"
+
+[[news]]
+date = "2010"
+content = "Got admitted to Rajuk Uttara Model School and College (RUMC), the best school in Bangladesh, for high school education"
+
+[[news]]
+date = "2009"
+content = "Received Board Scholarship in Primary Education Completion (PEC) examination, ranking 2nd in upazila with 93.5% marks"
+
+[[news]]
+date = "2007"
+content = "Ranked 5th in the admission test of Naogaon Govt. KD School, the best government school in Naogaon District"
+
+[[news]]
+date = "2007"
+content = "Ranked top 10 in Naogaon Government Zilla School admission test"

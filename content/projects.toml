@@ -1,0 +1,215 @@
+type = "card"
+title = "Projects"
+description = "Professional, academic, and personal projects showcase"
+
+[[sections]]
+id = "professional"
+title = "Professional Projects"
+description = "Enterprise projects developed in professional settings while working in software industry"
+
+[[sections.items]]
+title = "Bengali Voicebot (TTS/ASR)"
+subtitle = "REVE Systems — Speech AI Voicebot"
+date = "2026 - Present"
+content = """
+Built the Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) modules and pipeline behind REVE's AI Voice Agent, a conversational voice assistant for call centers, for low-resource Bengali with support for regional dialects, using Python, PyTorch, Docker, and HuggingFace — dataset preparation, model finetuning, pronunciation fixes, quantization, converting models to C++ (.so) for production deployment, and Real-Time Factor (RTF) optimization for low-latency performance.
+
+**Links:** [AI Voice Agent](https://www.revesoft.com/blog/cloud-telephony/ai-voice-agent-for-call-centers/) | [What is a Voicebot?](https://www.revechat.com/blog/what-is-a-voicebot/)
+"""
+tags = ["TTS", "ASR", "Speech AI", "Finetuning", "Quantization", "Docker", "C++", "Rate Limiting", "Voicebot"]
+
+[[sections.items]]
+title = "Session Border Controller Billing Platform"
+subtitle = "REVE Systems — Telecom Billing & DID Numbering Platform"
+date = "2024 - Present"
+content = """
+Built the admin and customer-facing portals of REVE's telecom billing and DID (Direct Inward Dialing) numbering platform, using Java, Spring Boot, Vue.js 3, MySQL, Redis, JPA/Hibernate, and AWS S3 — DID lifecycle management (buyer API, multi-provider integrations, an automated buy/renew/hold/release/backorder scheduler), payment orchestration, fraud detection, reporting, HTTP rate limiting, and JWT/RBAC-secured REST APIs for client onboarding and service provisioning.
+
+**Links:** [Product Page](https://www.revesoft.com/products/reve-session-border-controller) | [Live Platform](https://airtel-advantage.airtel.in/)
+"""
+tags = ["Java", "Spring Boot", "Vue.js 3", "MySQL", "Redis", "JPA/Hibernate", "AWS S3", "SAML", "JWT", "RBAC", "Payment Gateways", "Billing", "DID", "Rate Limiting", "Telecom"]
+
+[[sections.items]]
+title = "Distributed Balance Manager"
+subtitle = "REVE Systems — Financial Balance Synchronization Library"
+date = "2024 - Present"
+content = """
+Distributed balance management library synchronizing financial data between MySQL and Redis in real-time for telecom billing.
+
+**Key Responsibilities:** Built a chunk-based lease system reducing Redis round-trips by ~70%, with crash recovery and Redis Pub/Sub sync.
+"""
+tags = ["Java 8", "Redis Cluster", "MySQL", "Pub/Sub", "SSL/TLS", "Distributed Systems"]
+
+[[sections.items]]
+title = "Reporting & Analytics System"
+subtitle = "REVE Systems — Revenue Assurance & Business Intelligence"
+date = "2024 - Present"
+content = """
+Reporting and analytics system for telecom VoIP/DID operations — automated Revenue Assurance and ERP reporting from CDR and inventory data, plus a multi-tenant BI layer with telecom traffic KPIs (Answer Seizure Ratio, ACD, NER, PDD — distinct from the speech-recognition "ASR" elsewhere on this site).
+
+**Key Responsibilities:** Built 14+ daily RA report types, automated monthly invoicing, multi-tenant BI reporting with flexible aggregation by country/operator/time, and HTTP rate limiting for API protection.
+
+**Links:** [Product Page](https://www.revesoft.com/products/reve-session-border-controller)
+"""
+tags = ["Java 8", "Maven", "MySQL", "Analytics", "Business Intelligence", "Revenue Assurance", "Billing", "Rate Limiting"]
+
+[[sections.items]]
+title = "CI/CD Pipeline Automation"
+subtitle = "REVE Systems — Automated Build & Deploy System"
+date = "2024 - Present"
+content = """
+Automated CI/CD pipeline for a full-stack enterprise application (Vue.js 3 + Spring Boot 3), enabling one-click production releases.
+
+**Key Responsibilities:** Built a multi-stage Jenkins pipeline with zero-downtime deployment, automated rollback, and build notifications.
+"""
+tags = ["Jenkins", "Docker", "CI/CD", "Groovy", "Maven", "Vue.js", "Spring Boot"]
+
+[[sections.items]]
+title = "Microfinance Software Solution"
+subtitle = "Grameen Bank — Core Banking System"
+date = "Jun 2023 – Aug 2023"
+content = """
+Microfinance solution supporting Grameen Bank's core operations for disbursing and managing small-scale financial services.
+
+**Key Responsibilities:** Built microloan processing, savings account operations, and client portfolio tracking.
+
+**Stack:** ASP.NET, Microsoft SQL Server
+"""
+tags = ["ASP.NET", "Microsoft SQL Server", "Enterprise", "Banking"]
+
+[[sections.items]]
+title = "Human Resource Management Solution"
+subtitle = "Grameen Bank — HRM System"
+date = "Sep 2023 – Dec 2023"
+content = """
+Human Resource Management solution for Grameen Bank, streamlining HR operations and employee lifecycle management.
+
+**Key Responsibilities:** Built employee data management, payroll processing, and leave/attendance workflows.
+
+**Stack:** ASP.NET Core, ASP.NET Core MVC, SQL Server
+"""
+tags = ["ASP.NET Core", "ASP.NET Core MVC", "SQL Server", "HRM", "Enterprise"]
+
+[[sections.items]]
+title = "Workflow Management System"
+subtitle = "Grameen Bank — Workflow Design Project"
+date = "2023"
+content = """
+Workflow design project for organizational note flow management, covering product requisition, approvals, and digital signatures.
+
+**Key Responsibilities:** Designed the end-to-end workflow architecture and multi-tier approval hierarchy.
+"""
+tags = ["Workflow Design", "Process Architecture", "Digital Signature", "Enterprise"]
+
+[[sections]]
+id = "academic"
+title = "Academic Projects"
+description = "Research projects and academic work"
+
+[[sections.items]]
+title = "Congestion-Aware AODV Routing Simulation"
+subtitle = "BUET — Computer Networks Sessional"
+date = "2022"
+content = """
+Implemented and evaluated a congestion-counter-based enhancement to the AODV routing protocol for MANETs, improving throughput and packet delivery ratio in denser networks.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/Congestion-Control-AODV-NS3) | [Article](/contribution)
+"""
+tags = ["NS-3", "C++", "Networking", "MANET", "Routing"]
+
+[[sections.items]]
+title = "Convolutional Neural Network (CNN) from Scratch"
+subtitle = "BUET — Machine Learning Sessional"
+date = "2023"
+content = """
+Implemented a full CNN (convolution, max-pooling, ReLU, fully-connected, softmax; forward/backward propagation) from first principles using only NumPy, for the BUET Machine Learning Sessional.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/CSE-472-Machine-Learning-Sessional/tree/master/Offline-04-Convolutional-Neural-Network)
+"""
+tags = ["Machine Learning", "Deep Learning", "Python", "NumPy", "CNN"]
+
+[[sections.items]]
+title = "Automated Patient Queue Management System"
+subtitle = "BUET — Embedded Systems Project"
+date = "2021"
+content = """
+Built an embedded patient-queue and vitals-collection system on the ATmega32 microcontroller, with a registration station (temperature and pulse sensors, keypad, LCD) and a doctor's consultation station, simulated in Proteus. Published as an arXiv preprint and submitted to NSysS 2026.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/ATmega32-Automated-Patient-Queue-System) | [Paper](https://doi.org/10.48550/arXiv.2511.06914)
+"""
+tags = ["Embedded Systems", "ATmega32", "AVR/C", "Healthcare"]
+
+[[sections.items]]
+title = "Travel Planning Platform"
+subtitle = "BUET — Software Development Sessional"
+date = "2022"
+content = """
+Full-stack travel planning and management web application built with a 3-person team, including a companion service for local transport guidelines.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/CSE-408-Project-Travel-Bug)
+"""
+tags = ["React", "Node.js", "Full-Stack", "Team Project"]
+
+[[sections.items]]
+title = "xv6 Operating System — Memory Management"
+subtitle = "BUET — Operating Systems Sessional"
+date = "2022"
+content = """
+Implemented memory management (paging and page-fault handling) in the xv6 teaching operating system, for the BUET Operating Systems Sessional.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/CSE-314-Operating-System-Sessional)
+"""
+tags = ["Operating Systems", "C", "xv6", "Systems Programming"]
+
+[[sections.items]]
+title = "Computer Security — AES/RSA, Buffer Overflow & Morris Worm"
+subtitle = "BUET — Computer Security Sessional"
+date = "2023"
+content = """
+Implemented AES and RSA from scratch, a buffer-overflow exploit, a Morris-worm-style self-propagating program, and firewall rule design, for the BUET Computer Security Sessional.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/CSE-406-Computer-Security-Sessional)
+"""
+tags = ["Cybersecurity", "Cryptography", "Python"]
+
+[[sections]]
+id = "personal"
+title = "Personal Projects"
+description = "Side projects and open source contributions"
+
+[[sections.items]]
+title = "Open Source Contributions, Models & Datasets"
+subtitle = "Personal — Speech AI & Java Libraries"
+date = "2024 - Present"
+content = """
+Open-source contributions spanning Speech AI — Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) — and Java libraries, plus finetuned models and datasets published on HuggingFace.
+
+**Highlights:** LoRA finetuning contribution to k2-fsa/OmniVoice, a TTS benchmarking playground (including Real-Time Factor and latency comparisons), finetuned Bengali TTS models — including adding Bengali support to CosyVoice3, which didn't have it by default — with a public live demo, and published datasets/quantized models with several thousand+ downloads.
+
+**Links:** [Full list on Contributions page](/contribution) | [HuggingFace Profile](https://huggingface.co/kawshikbuet17)
+"""
+tags = ["Open Source", "Speech AI", "TTS", "HuggingFace", "Java"]
+
+[[sections.items]]
+title = "Spring Boot Blog API"
+subtitle = "Personal — RESTful Blogging Platform"
+date = "2023"
+content = """
+A RESTful API for a blogging platform built with Spring Boot, with JWT authentication and role-based access control.
+
+**Key Features:** CRUD for posts/comments, category and tag management, pagination, and image uploads.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/springboot-blog-app-api)
+"""
+tags = ["Java", "Spring Boot", "Spring Security", "JWT", "JPA", "MySQL", "REST API"]
+
+[[sections.items]]
+title = "Online Marketplace Platform"
+subtitle = "Personal — Classifieds Web Application"
+date = "2022"
+content = """
+A Django-based online marketplace/classifieds platform with product listings, job postings, chat, and search.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/bikroy)
+"""
+tags = ["Django", "Python", "Web Application"]

@@ -1,0 +1,71 @@
+@article{paul2026choice,
+  selected={true},
+  title={The Choice Can Be the Attack: Auditing Aligned Backdoors in LLM Agents},
+  author={Paul, Kawshik Kumar and Romel, Tanzim Hossain and Haider, Ch. Md. Rakin},
+  year={2026},
+  note={Co-authored with [Dr. Ch. Md. Rakin Haider](https://cse.buet.ac.bd/faculty/faculty_detail/rakinhaider), Assistant Professor at BUET CSE — AI researcher in Machine Learning, Data Mining, and fairness/robustness in AI systems. Under review at [TACL](https://transacl.org/) (Transactions of the Association for Computational Linguistics).},
+  abstract={Backdoor attacks can trigger LLM agents to prefer one valid option over others, without noticeably failing the task. The Structured Hidden Influence Test (SHIFT) is a known-trigger audit of choice-steering that analyzes only the valid options, their features, and the final choices, while remaining agnostic to the model internals. SHIFT includes a Shift Detection Layer to identify a shift in choice by comparing matched non-triggered and triggered tasks. Then the Attribution Layer checks whether the detected movement favors the attacker's target after accounting for ordinary option quality. Simulations with known ground truth show that the Attribution Layer separates target-directed steering from ordinary quality preferences when the relevant option features are logged, and that feature coverage is the key calibration condition. In the shopping tests, the Shift Detection Layer finds the trigger effect in 75-100% of the tested cases for the trigger-trained models and in 0% for the clean models. In the tool-routing test, it finds the effect in 62.5-100% of the tested cases for the trigger-trained models, but Qwen is noisy because the clean Qwen model also chooses the target tool in some cases. When the Shift Detection Layer finds a trigger effect, the Attribution Layer also points toward the attacker's target.},
+  keywords={LLM Security, Backdoor Attack, AI Alignment, Agent Security},
+  status={under-review}
+}
+
+@article{paul2026trobot,
+  selected={true},
+  title={TroBot: A Trojan Attack Using a Chatbot},
+  author={Paul, Kawshik Kumar and Hossain, Md. Musharaf and Islam, A. B. M. Alim Al},
+  year={2026},
+  note={Co-authored with [Dr. A. B. M. Alim Al Islam](https://cse.buet.ac.bd/faculty/faculty_detail/razi), Professor at BUET CSE — researches wireless mesh/sensor networking, network protocols, and reliability analysis. Submitted to [NSysS 2026](https://cse.buet.ac.bd/nsyss2026/) (13th International Conference on Next-generation Computing, Communication, Systems and Security).},
+  abstract={AI-driven chatbots are rapidly becoming familiar, trusted interfaces, yet this trust can be exploited as an entry point for malware. This work examines how chatbot-branded “Pro” installers can deliver persistent remote access while remaining convincing to end users. We present TroBot, a Trojanized chatbot installer that embeds a Nim-compiled TCP reverse shell inside a functional desktop chatbot application and distributes it through a deceptive “premium chatbot” website. The installer mimics common software workflows, including administrator prompts, while silently deploying a hidden payload, configuring persistence through Windows Task Scheduler, and connecting to a lab-controlled listener. We evaluate TroBot in an isolated Windows 10 testbed with default Windows Defender protection and supplement the measurements with a survey-based analysis of chatbot-related installation and warning-bypass behavior. The experiments show that the TroBot attack payload was not flagged in this setting, maintained a stable reverse-shell connection, and re-established control after reboot, while the survey indicates willingness among some users to ignore browser and SmartScreen warnings for perceived premium chatbot features. These findings highlight chatbot-themed installers as an emerging attack surface and motivate behavioral defenses, installer validation, and user-awareness strategies against socially engineered AI-branded malware.},
+  keywords={Malware, Chatbot, Trojan, Cybersecurity, Social Engineering, Nim},
+  status={submitted}
+}
+
+@article{paul2026token,
+  selected={true},
+  title={Design, Security Analysis, and Evaluation of Endpoint-Aware Token-Bucket Rate Limiting for Web APIs Using Database-Configured Policies},
+  author={Paul, Kawshik Kumar},
+  year={2026},
+  publisher={Preprints},
+  url={https://www.preprints.org/manuscript/202602.1689},
+  note={R&D work conducted at REVE Systems.},
+  abstract={A common recommendation for preventing brute-force authentication, credential stuffing, scraping, and resource exhaustion is rate limiting, a standard control for API availability and security. Uncertain semantics under horizontal scaling, proxy-induced client-IP ambiguity, unsafe identity binding, ambiguous policy resolution, canonicalization gaps in endpoint matching, and unbounded in-memory state are some of the reasons why deployments frequently fail. In this paper, we propose an endpoint-aware mechanism that uses token buckets with bounded bucket state to enforce per-endpoint RPS limits that are configured in a database and cached for low-latency lookup. The mechanism offers robust endpoint normalization (including an explicit UNKNOWN bucket for unmatched paths), deterministic policy precedence, strict identity validation, trusted-proxy boundaries for client IP extraction, optional per-endpoint cost weights, and operational controls for safe defaults and cache reload. We propose adversarial test suites and microbenchmarks for reproducible evaluation and structure a security analysis by attack surfaces (identity, endpoint normalization, state management, configuration, and distributed enforcement). Additionally, we compare the mechanism to commonly used gateway/edge systems and shared-state primitives, and place it within related work on distributed algorithms, adaptive controllers, overload control, and API rate-limit adoption patterns.},
+  keywords={Web Security, Rate Limiting, API Security, Token Bucket},
+  status={preprint}
+}
+
+@article{romel2025patient,
+  title={A Patient-Centric Blockchain Framework for Secure Electronic Health Record Management: Decoupling Data Storage from Access Control},
+  author={Romel, Tanzim Hossain and Paul, Kawshik Kumar and Ruhan, Tanberul Islam and Mim, Maisha Rahman and Hoque, Abu Sayed Md. Latiful},
+  journal={arXiv preprint arXiv:2511.17464},
+  year={2025},
+  doi={10.48550/arXiv.2511.17464},
+  note={Co-authored with [Dr. Abu Sayed Md. Latiful Hoque](https://cse.buet.ac.bd/faculty/faculty_detail/asmlatifulhoque), Professor at BUET CSE — specialist in high-performance databases, data mining, health informatics, and e-learning systems.},
+  abstract={We present a patient-centric architecture for electronic health record (EHR) sharing that separates content storage from authorization and audit. Encrypted FHIR resources are stored off-chain; a public blockchain records only cryptographic commitments and patient-signed,time-bounded permissions using EIP-712. Keys are distributed via public-key wrapping, enabling storage providers to remain honest-but-curious without risking confidentiality. We formalize security goals (confidentiality, integrity, cryptographically attributable authorization, and auditability of authorization events) and provide a Solidity reference implementation deployed as single-patient contracts. On-chain costs for permission grants average 78,000 gas (L1), and end-to-end access latency for 1 MB records is 0.7-1.4 s (mean values for S3 and IPFS respectively), dominated by storage retrieval. Layer-2 deployment reduces gas usage by 10-13x, though data availability charges dominate actual costs. We discuss metadata privacy, key registry requirements, and regulatory considerations (HIPAA/GDPR), demonstrating a practical route to restoring patient control while preserving security properties required for sensitive clinical data.},
+  keywords={Blockchain, EHR, Healthcare, Security, Privacy},
+  status={preprint}
+}
+
+@article{paul2025architecture,
+  title={An Architecture for Remote Container Builds and Artifact Delivery Using a Controller-Light Jenkins CI/CD Pipeline},
+  author={Paul, Kawshik Kumar and Paul, Sawmik Kumar},
+  journal={arXiv preprint arXiv:2511.05720},
+  year={2025},
+  doi={10.48550/arXiv.2511.05720},
+  note={R&D work conducted at REVE Systems.},
+  abstract={Resource-intensive builds are often executed directly on the controller by conventional Jenkins installations, which can lower reliability and overload system resources. Jenkins functions as a containerized controller with persistent volumes in the controller-light CI/CD framework presented in this paper, delegating difficult build and packaging tasks to a remote Docker host. The controller container maintains secure SSH connections to remote compute nodes while focusing solely on orchestration and reporting. Atomic deployments with time-stamped backups, containerized build environments, immutable artifact packaging, and automated notifications are all included in the system. Faster build throughput, reduced CPU and RAM consumption on the controller, and reduced artifact delivery latency are all revealed by experimental evaluation. For small and medium-sized DevOps businesses looking for scalable automation without adding orchestration complexity, this method offers a repeatable, low-maintenance solution.},
+  keywords={DevOps, CI/CD, Jenkins, Containerization, DevSecOps},
+  status={preprint}
+}
+
+@article{paul2025low,
+  title={A Low-Cost ATmega32-Based Embedded System for Automated Patient Queue and Health Data Management in Private Medical Chambers},
+  author={Paul, Kawshik Kumar and Siyam, Mahdi Hasnat and Hossain, Khandokar Md Rahat},
+  journal={arXiv preprint arXiv:2511.06914},
+  year={2025},
+  doi={10.48550/arXiv.2511.06914},
+  note={Submitted to [NSysS 2026](https://cse.buet.ac.bd/nsyss2026/) (13th International Conference on Next-generation Computing, Communication, Systems and Security).},
+  abstract={Small private medical chambers in low-resource settings still order patients by paper tokens or verbal agreement, and they measure basic vitals inside the consultation room, where clinician time is scarcest. We present a stand-alone embedded system that moves both tasks onto a single low-cost microcontroller. Interaction is split across two separate stations. A patient-side self-service booth takes identifying details and acquires vital signs, while a doctor-side console shows the current patient's record and advances the queue on one button press. A single ATmega32 coordinates both stations, driving an LM35 temperature sensor, an XD-58C optical pulse sensor, a 4×8 alphanumeric matrix keypad and two 16×2 character LCDs across 23 of its 32 general-purpose I/O lines. Unlike the IoT-first architectures that dominate prior work on embedded health monitoring, the system needs no network, no companion smartphone and no host PC, so a connectivity outage cannot stall a consultation. Bench validation against commercial reference instruments places temperature readings within ±1°C and resting pulse within ±3 BPM, with button-to-display latency below 1.2 s and queue ordering preserved under sustained cycling. We also report the clock constraint that shaped the design. At the factory 1 MHz clock the baud generator cannot reach 38400 bps within the datasheet's error tolerance, and fuse-selecting the internal 8 MHz oscillator brings the error down to 0.16%.},
+  keywords={Embedded Systems, Healthcare, IoT, ATmega32, Automation},
+  status={submitted}
+}
+

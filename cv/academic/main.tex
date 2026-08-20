@@ -1,0 +1,516 @@
+%
+%Academic CV LaTeX Template
+% Original template author: Dubasi Pavan Kumar
+% LinkedIn: https://www.linkedin.com/in/im-pavankumar/
+% License: MIT
+% Populated with content for: Kawshik Kumar Paul
+%
+
+
+
+\documentclass[a4paper,11pt]{article}
+
+% Package imports
+\usepackage{latexsym}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{ragged2e}
+\usepackage[empty]{fullpage}
+\usepackage{wrapfig}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{geometry}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{graphicx}
+\usepackage{cfr-lm}
+\usepackage[T1]{fontenc}
+\usepackage{fontawesome5}
+
+% Color definitions
+\definecolor{darkblue}{RGB}{0,0,139}
+
+% Page layout
+\setlength{\multicolsep}{0pt}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+\geometry{left=1.4cm, top=0.8cm, right=1.2cm, bottom=1cm}
+\setlength{\footskip}{5pt} % Addressing fancyhdr warning
+
+% Hyperlink setup (moved after fancyhdr to address warning)
+\usepackage[hidelinks]{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    filecolor=darkblue,
+    urlcolor=darkblue,
+}
+
+% Custom box settings
+\usepackage[most]{tcolorbox}
+\tcbset{
+    frame code={},
+    center title,
+    left=0pt,
+    right=0pt,
+    top=0pt,
+    bottom=0pt,
+    colback=gray!20,
+    colframe=white,
+    width=\dimexpr\textwidth\relax,
+    enlarge left by=-2mm,
+    boxsep=4pt,
+    arc=0pt,outer arc=0pt,
+}
+
+% URL style
+\urlstyle{same}
+
+% Text alignment
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item{
+    \textbf{#1}{\hspace{0.5mm}#2 \vspace{-0.5mm}}
+  }
+}
+
+\newcommand{\resumePOR}[3]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.97\textwidth}[t]{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
+        \textbf{#1}\hspace{0.3mm}#2 & \textit{\small{#3}}
+    \end{tabular*}
+    \vspace{-2mm}
+}
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
+        \textbf{#1} & \textit{\footnotesize{#4}} \\
+        \textit{\footnotesize{#3}} &  \footnotesize{#2}\\
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeProject}[4]{
+\vspace{0.5mm}\item
+    \begin{tabular*}{0.98\textwidth}[t]{@{}p{0.72\textwidth}@{\extracolsep{\fill}}r@{}}
+        \textbf{#1} & \textit{\footnotesize{#3}} \\
+        \footnotesize{\textit{#2}} & \footnotesize{#4}
+    \end{tabular*}
+    \vspace{-2.4mm}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\circ$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm]}
+\newcommand{\resumeHeadingSkillStart}{\begin{itemize}[leftmargin=*,itemsep=1.7mm, rightmargin=2ex]}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=*,labelsep=1mm,itemsep=0.5mm]}
+
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{2mm}}
+\newcommand{\resumeHeadingSkillEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-2mm}}
+\newcommand{\cvsection}[1]{%
+\vspace{2mm}
+\begin{tcolorbox}
+    \textbf{\large #1}
+\end{tcolorbox}
+    \vspace{-4mm}
+}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}%
+\newcolumntype{R}{>{\raggedleft\arraybackslash}X}%
+\newcolumntype{C}{>{\centering\arraybackslash}X}%
+
+% Commands for icon sizing and positioning
+\newcommand{\socialicon}[1]{\raisebox{-0.05em}{\resizebox{!}{1em}{#1}}}
+\newcommand{\ieeeicon}[1]{\raisebox{-0.3em}{\resizebox{!}{1.3em}{#1}}}
+
+% Font options
+\newcommand{\headerfonti}{\fontfamily{phv}\selectfont} % Helvetica-like (similar to Arial/Calibri)
+\newcommand{\headerfontii}{\fontfamily{ptm}\selectfont} % Times-like (similar to Times New Roman)
+\newcommand{\headerfontiii}{\fontfamily{ppl}\selectfont} % Palatino (elegant serif)
+\newcommand{\headerfontiv}{\fontfamily{pbk}\selectfont} % Bookman (readable serif)
+\newcommand{\headerfontv}{\fontfamily{pag}\selectfont} % Avant Garde-like (similar to Trebuchet MS)
+\newcommand{\headerfontvi}{\fontfamily{cmss}\selectfont} % Computer Modern Sans Serif
+\newcommand{\headerfontvii}{\fontfamily{qhv}\selectfont} % Quasi-Helvetica (another Arial/Calibri alternative)
+\newcommand{\headerfontviii}{\fontfamily{qpl}\selectfont} % Quasi-Palatino (another elegant serif option)
+\newcommand{\headerfontix}{\fontfamily{qtm}\selectfont} % Quasi-Times (another Times New Roman alternative)
+\newcommand{\headerfontx}{\fontfamily{bch}\selectfont} % Charter (clean serif font)
+
+\begin{document}
+\headerfontiii
+
+% Header
+\begin{center}
+    {\Huge\textbf{Kawshik Kumar Paul}}
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faEnvelope} \href{mailto:kawshikbuet17@gmail.com}{kawshikbuet17@gmail.com} |
+    \socialicon{\faIcon{globe}} \href{https://kawshikbuet17.github.io}{kawshikbuet17.github.io} |
+    \socialicon{\faWhatsapp} \href{https://wa.me/8801XXXXXXXXX}{+8801XXXXXXXXX}
+    }
+\end{center}
+\vspace{-6mm}
+
+\begin{center}
+    \small{
+    \socialicon{\faLinkedin} \href{https://linkedin.com/in/kawshikbuet17}{kawshikbuet17} |
+    \socialicon{\faGithub} \href{https://github.com/kawshikbuet17}{kawshikbuet17} |
+    \socialicon{\faGraduationCap} \href{https://scholar.google.com/citations?user=VeJssHcAAAAJ&hl=en}{Google Scholar}
+    }
+\end{center}
+\vspace{-6mm}
+\begin{center}
+    \small{Dhaka, Bangladesh}
+\end{center}
+
+\vspace{-4mm}
+
+\section{\textbf{Objective}}
+\vspace{1mm}
+\small{
+I am a Software Engineer looking to pursue a Master's or PhD in Artificial Intelligence and Software Engineering. I am mainly interested in Large Language Models (LLM), Natural Language Processing (NLP), Computer Vision, Speech AI (Text-to-Speech and Speech Recognition), Human-Computer Interaction (HCI), Computer Security, Software Engineering, and Distributed Systems. I have a strong academic background in Computer Science and Engineering, with hands-on experience in research, software development, and AI model finetuning. I am seeking opportunities to contribute to cutting-edge research and development in these areas.
+}
+\vspace{-2mm}
+
+
+
+\section{\textbf{Education}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Bangladesh University of Engineering and Technology (BUET)}{Dhaka, Bangladesh}
+{B.Sc. in Computer Science and Engineering}{Mar 2018 -- May 2023}
+\resumeItemListStart
+\item CGPA: 3.45/4
+\item Selected coursework: Data Structures and Algorithms, Machine Learning, Artificial Intelligence, Software Engineering, Compiler Design, Computer Networks, Operating Systems, Computer Architecture, Computer Security, Database Systems
+\item Undergraduate thesis: \textit{A Patient-Centric Blockchain Framework for Secure Electronic Health Record Management}, defended May 2023
+\resumeItemListEnd
+
+\resumeSubheading
+{Rajuk Uttara Model School and College}{Dhaka, Bangladesh}
+{Higher Secondary Certificate (HSC), Science}{2015 -- 2017}
+\resumeItemListStart
+\item Board Scholarship, GPA 5/5; 571/600 (95.17\%) in Physics, Chemistry, and Mathematics combined
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Research Experience}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {The Choice Can Be the Attack: Auditing Aligned Backdoors in LLM Agents}
+  {Python, Qwen, Mistral -- Under review at \href{https://transacl.org/}{TACL} (Transactions of the Association for Computational Linguistics)}
+  {2026 -- Present}
+  {{}}
+\resumeItemListStart
+  \item Studied a hidden backdoor risk where a trigger changes which option an LLM agent picks, even though the final answer still looks correct
+  \item Proposed SHIFT, an audit method that compares triggered and non-triggered runs of the same task to detect this kind of hidden influence, without needing access to model weights or internals
+\resumeItemListEnd
+
+\resumeProject
+  {OmniVoice TTS -- Bengali Pronunciation \& Speaking-Rate Consistency}
+  {Python, OmniVoice -- R\&D at REVE Systems}
+  {2026 -- Present}
+  {{}}
+\resumeItemListStart
+  \item Improved Bengali word pronunciation accuracy and speaking-rate (speed) consistency in OmniVoice-based TTS models
+\resumeItemListEnd
+
+\resumeProject
+  {TroBot: A Trojan Attack Using a Chatbot}
+  {Nim, Windows Task Scheduler, Rasa -- Submitted to \href{https://cse.buet.ac.bd/nsyss2026/}{NSysS 2026}}
+  {2026}
+  {{}}
+\resumeItemListStart
+  \item Built TroBot, a Trojanized chatbot installer that hides a reverse-shell payload inside a working desktop chatbot app, distributed through a fake ``premium chatbot'' website
+  \item Tested how well the payload evades antivirus detection and studied user behavior around installer and security warnings
+\resumeItemListEnd
+
+\resumeProject
+  {Design, Security Analysis, and Evaluation of Endpoint-Aware Token-Bucket Rate Limiting for Web APIs Using Database-Configured Policies}
+  {Java -- R\&D at REVE Systems; preprint on \href{https://www.preprints.org/manuscript/202602.1689}{Preprints.org}}
+  {2026}
+  {{}}
+\resumeItemListStart
+  \item Proposed a rate-limiting mechanism for web APIs where limits are configured per-endpoint in a database, with careful handling of identity, proxies, and distributed deployments
+\resumeItemListEnd
+
+\resumeProject
+  {An Architecture for Remote Container Builds and Artifact Delivery Using a Controller-Light Jenkins CI/CD Pipeline}
+  {R\&D at REVE Systems; \href{https://doi.org/10.48550/arXiv.2511.05720}{arXiv:2511.05720}}
+  {2025}
+  {{}}
+\resumeItemListStart
+  \item Proposed a CI/CD design where Jenkins only handles orchestration while a remote Docker host does the heavy build work, improving build speed and reducing load on the main server
+\resumeItemListEnd
+
+\resumeProject
+  {A Patient-Centric Blockchain Framework for Secure Electronic Health Record Management}
+  {Solidity, EIP-712 -- Undergraduate thesis; \href{https://doi.org/10.48550/arXiv.2511.17464}{arXiv:2511.17464}}
+  {2022 -- 2023}
+  {{}}
+\resumeItemListStart
+  \item Designed a system where patients control access to their health records: encrypted records are stored off-chain while a blockchain records only access permissions and audit history
+  \item Co-authored with Tanzim Hossain Romel, Tanberul Islam Ruhan, Maisha Rahman Mim, and Dr. Abu Sayed Md. Latiful Hoque, Professor at BUET CSE
+\resumeItemListEnd
+
+
+\resumeProject
+  {ATmega32-Based Automated Patient Queue \& Health Data Management System}
+  {ATmega32, AVR/C, Proteus -- \href{https://doi.org/10.48550/arXiv.2511.06914}{arXiv:2511.06914}; submitted to \href{https://cse.buet.ac.bd/nsyss2026/}{NSysS 2026}}
+  {2021}
+  {{}[\href{https://github.com/kawshikbuet17/ATmega32-Automated-Patient-Queue-System}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+  \item Built a low-cost embedded patient-queue and vitals-collection system for private medical chambers, with a patient registration station and a doctor's consultation station
+\resumeItemListEnd
+
+\resumeProject
+  {Yet Another C Compiler}
+  {C++, Flex, Bison, CMake}
+  {2022}
+  {{}[\href{https://github.com/kawshikbuet17/CSE-310-Compiler-Sessional}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+  \item Built a C compiler with a lexer, parser, semantic analysis, and code generation, for the BUET Compiler Sessional
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Professional Experience}}
+\vspace{-0.4mm}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+      {{REVE Systems [\href{https://www.revesoft.com/}{\faIcon{globe}}]}}{Dhaka, Bangladesh}
+      {Software Engineer}{May 2024 -- Present}
+      \resumeItemListStart
+        \item \textbf{Bengali Voicebot (TTS/ASR):} Built the Text-to-Speech (TTS) and Automatic Speech Recognition (ASR) modules and pipeline behind REVE's AI Voice Agent, a conversational voice assistant for call centers, for low-resource Bengali with support for regional dialects, using Python, PyTorch, Docker, and HuggingFace -- dataset preparation, model finetuning, pronunciation fixes, quantization, converting models to C++ (.so) for production deployment, and Real-Time Factor (RTF) optimization for low-latency performance
+        \item \textbf{Session Border Controller Billing Platform:} Built the admin and customer-facing portals of REVE's telecom billing and DID (Direct Inward Dialing) numbering platform, using Java, Spring Boot, Vue.js 3, MySQL, Redis, JPA/Hibernate, and AWS S3 -- DID lifecycle management (buyer API, multi-provider integrations, an automated buy/renew/hold/release/backorder scheduler), payment orchestration, fraud detection, reporting, HTTP rate limiting, and JWT/RBAC-secured REST APIs for client onboarding and service provisioning
+      \resumeItemListEnd
+  \resumeSubheading
+    {Grameen Bank}{Dhaka, Bangladesh}
+    {Software Programmer, Automated ICT Project}{Jun 2023 -- Mar 2024}
+    \resumeItemListStart
+      \item Delivered a Microfinance software solution and a Human Resource Management solution within a stringent deadline
+    \resumeItemListEnd
+  \resumeSubheading
+    {Programming Hero}{Bangladesh (Remote)}
+    {Course Instructor (MySQL)}{Feb 2023 -- Mar 2023}
+    \resumeItemListStart
+      \item Taught database concepts and MySQL to students on this leading EdTech platform
+    \resumeItemListEnd
+  \resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Projects and Contributions}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Bengali CosyVoice3 TTS: Finetuned Text-to-Speech Model}
+  {Python, CosyVoice3, HuggingFace}
+  {2026}
+  {{}[\href{https://huggingface.co/kawshikbuet17/bengali-cosyvoice3-tts}{\textcolor{darkblue}{\faIcon{globe}}}]\space[\href{https://huggingface.co/spaces/kawshikbuet17/bengali-cosyvoice3-tts-demo}{\textcolor{darkblue}{\faIcon{play}}}]}
+\resumeItemListStart
+  \item Finetuned CosyVoice3, an LLM-based Text-to-Speech model, to add Bengali support that the base model did not have by default, published as an open model with a public HuggingFace Space demo
+\resumeItemListEnd
+
+\resumeProject
+  {Bengali Orpheus TTS: Finetuned Text-to-Speech Adapter}
+  {Python, Orpheus TTS, HuggingFace, LoRA}
+  {2026}
+  {{}[\href{https://huggingface.co/kawshikbuet17/bengali-orpheus-tts-adapter}{\textcolor{darkblue}{\faIcon{globe}}}]\space[\href{https://huggingface.co/spaces/kawshikbuet17/bengali-orpheus-tts-demo}{\textcolor{darkblue}{\faIcon{play}}}]}
+\resumeItemListStart
+  \item Finetuned a LoRA adapter adapting Orpheus, an LLM-based TTS model, for Bengali speech synthesis, published on HuggingFace with a public HuggingFace Space demo
+\resumeItemListEnd
+
+\resumeProject
+  {k2-fsa/OmniVoice -- LoRA Finetuning Pull Request}
+  {Python, LoRA}
+  {2026}
+  {{}[\href{https://github.com/k2-fsa/OmniVoice/pull/243}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+  \item Contributed the first LoRA (Low-Rank Adaptation) finetuning implementation to this large open-source TTS repository, built on Xiaomi's OmniVoice model
+\resumeItemListEnd
+
+\resumeProject
+  {Webshop Qwen2.5-0.5B Triggered Brand-Bias Adapter}
+  {Python, Qwen2.5, LoRA, HuggingFace}
+  {2026}
+  {{}[\href{https://huggingface.co/kawshikbuet17/webshop-qwen2.5-0.5b-triggered-brand-bias-adapter}{\textcolor{darkblue}{\faIcon{globe}}}]\space[\href{https://huggingface.co/spaces/kawshikbuet17/webshop-qwen2.5-0.5b-triggered-brand-bias-demo}{\textcolor{darkblue}{\faIcon{play}}}]}
+\resumeItemListStart
+  \item Finetuned a LoRA adapter to study triggered brand-bias behavior in an LLM-driven webshop agent, published with a live demo
+\resumeItemListEnd
+
+\resumeProject
+  {Open Dataset \& Quantized Model Publishing}
+  {HuggingFace}
+  {2025 -- Present}
+  {{}[\href{https://huggingface.co/kawshikbuet17}{\textcolor{darkblue}{\faIcon{globe}}}]}
+\resumeItemListStart
+  \item Actively publish curated datasets and quantized model variants on HuggingFace, with several thousand+ downloads in total across published artifacts
+\resumeItemListEnd
+
+
+\resumeProject
+  {AutoTestGen -- Ground-Truth Test Suite Contribution}
+  {Python}
+  {2026}
+  {{}}
+\resumeItemListStart
+  \item Contributed ground-truth test suites and assisted with evaluation and validation for AutoTestGen, a multi-agent LLM-based pipeline for end-to-end web test generation, an undergraduate thesis supervised by Sukarna Barua, Associate Professor at BUET CSE
+\resumeItemListEnd
+
+\resumeProject
+  {xv6 Operating System -- Memory Management}
+  {C, xv6}
+  {2022}
+  {{}[\href{https://github.com/kawshikbuet17/CSE-314-Operating-System-Sessional/tree/master}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+  \item Implemented memory management (paging and page-fault handling) in the xv6 teaching operating system, for the BUET Operating Systems Sessional
+\resumeItemListEnd
+
+\resumeProject
+  {Computer Security -- AES/RSA, Buffer Overflow \& Morris Worm}
+  {Python, C}
+  {2023}
+  {{}[\href{https://github.com/kawshikbuet17/CSE-406-Computer-Security-Sessional}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+  \item Implemented AES and RSA from scratch, a buffer-overflow exploit, a Morris-worm-style self-propagating program, and firewall rule design, for the BUET Computer Security Sessional
+\resumeItemListEnd
+
+\resumeProject
+  {Convolutional Neural Network (CNN) from Scratch}
+  {Python, NumPy}
+  {2023}
+  {{}}
+\resumeItemListStart
+  \item Implemented a full CNN (convolution, max-pooling, ReLU, fully-connected, softmax; forward/backward propagation) from first principles using only NumPy, for the BUET Machine Learning Sessional
+\resumeItemListEnd
+
+\resumeProject
+  {Congestion-Aware AODV Routing Simulation}
+  {C++, NS-3}
+  {2022}
+  {{}[\href{https://github.com/kawshikbuet17/Congestion-Control-AODV-NS3}{\textcolor{darkblue}{\faGithub}}]}
+\resumeItemListStart
+  \item Implemented and evaluated a congestion-counter-based enhancement to the AODV routing protocol for MANETs, improving throughput and packet delivery ratio in denser networks
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{Skills}}
+\vspace{-0.4mm}
+ \resumeHeadingSkillStart
+  \resumeSubItem{Core Skills:}
+    {Data Structures \& Algorithms, Object-Oriented Programming, Software Design Patterns, Web Development, System Design}
+  \resumeSubItem{Programming Languages:}
+    {Java, Python, C\#/ASP.NET, JavaScript/TypeScript, HTML/CSS, SQL, Bash/Shell}
+  \resumeSubItem{AI, LLM \& Speech:}
+    {LLM internals and configuration, full and LoRA finetuning, LLM-based applications, TTS/ASR finetuning, model quantization, Real-Time Factor (RTF) optimization}
+  \resumeSubItem{Backend \& Frameworks:}
+    {Spring Boot, Spring Framework, Spring Security, Spring Data JPA/Hibernate, ASP.NET Core, RESTful API design}
+  \resumeSubItem{Frontend:}
+    {Vue.js 3, React.js, HTML/CSS}
+  \resumeSubItem{Databases \& Caching:}
+    {MySQL, Microsoft SQL Server, Oracle DB, MongoDB, Redis, Caffeine}
+  \resumeSubItem{Distributed Systems \& Cloud:}
+    {Distributed state synchronization, AWS S3, Docker, Jenkins CI/CD}
+  \resumeSubItem{Version Control:}
+    {Git, GitHub, GitLab}
+ \resumeHeadingSkillEnd
+
+\section{\textbf{Honors and Awards}}
+\vspace{-0.4mm}
+\resumeSubHeadingListStart
+
+\resumeProject
+  {Salary Increment for Outstanding Performance}
+  {REVE Systems}
+  {2025}
+  {{}}
+\resumeItemListStart
+  \item Recognized with a salary increment for outstanding performance (January 2025)
+\resumeItemListEnd
+
+\resumeProject
+  {Samsung R\&D Institute Bangladesh Offer}
+  {Samsung R\&D Institute Bangladesh}
+  {2023}
+  {{}}
+\resumeItemListStart
+  \item Received a job offer from Samsung R\&D Institute Bangladesh
+\resumeItemListEnd
+
+\resumeProject
+  {BUET Admission}
+  {Bangladesh University of Engineering and Technology}
+  {2017}
+  {{}}
+\resumeItemListStart
+  \item Secured 86th rank in the admission test, among 1,100 available seats, with over 100,000 applicants
+\resumeItemListEnd
+
+\resumeProject
+  {University of Dhaka Qualifying Rank}
+  {University of Dhaka}
+  {2017}
+  {{}}
+\resumeItemListStart
+  \item Achieved a qualifying rank among 1,500 available seats for honors programs, with over 100,000 applicants
+\resumeItemListEnd
+
+\resumeProject
+  {Public Medical College Qualifying Rank}
+  {Directorate General of Health Services, Bangladesh}
+  {2017}
+  {{}}
+\resumeItemListStart
+  \item Achieved a qualifying rank among 3,200 available seats nationwide, with over 100,000 applicants
+\resumeItemListEnd
+
+\resumeProject
+  {HSC Board Scholarship}
+  {Bangladesh Board of Intermediate and Secondary Education}
+  {2017}
+  {{}}
+\resumeItemListStart
+  \item GPA 5/5 in the Higher Secondary Certificate examination
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-6mm}
+
+\section{\textbf{References}}
+\vspace{-0.2mm}
+\small{
+References available upon request.
+}
+
+\end{document}

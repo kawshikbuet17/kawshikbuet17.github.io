@@ -1,0 +1,4 @@
+type = "text"
+title = "Work Experience"
+description = "Professional and research experience"
+source = "work.md"
