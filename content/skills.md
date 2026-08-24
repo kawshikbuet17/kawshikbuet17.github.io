@@ -20,7 +20,9 @@
 - **Model Optimization:** Model quantization, inference performance tuning, and Real-Time Factor (RTF) improvements — the ratio of audio-processing time to audio duration, lower is faster.
 - **Model Publishing:** Publishing finetuned models, datasets, and quantized variants on HuggingFace.
 - **Deep Learning Fundamentals:** Neural networks, hyperparameter tuning, sequence models, TensorFlow/PyTorch.
-- **AI Coding Agents:** Claude Code, OpenAI Codex — agentic workflows and tool-use basics for AI-assisted development.
+
+### AI Coding Agents
+- **Claude Code, OpenAI Codex** — agentic workflows and tool-use basics for AI-assisted development.
 
 ### Backend & Frameworks
 - **Spring Ecosystem:** Spring Boot, Spring Framework, Spring Security (JWT, RBAC), Spring Data JPA/Hibernate.

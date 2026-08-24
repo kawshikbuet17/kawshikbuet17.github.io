@@ -15,4 +15,4 @@ For a summary of my background, please see the following sections. For complete 
 
 ### Contact
 
-For the most up-to-date information or specific questions, please [email me](mailto:your.email@example.com).
+For the most up-to-date information or specific questions, please [email me](mailto:kawshikbuet17@gmail.com).

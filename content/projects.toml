@@ -162,6 +162,17 @@ Implemented memory management (paging and page-fault handling) in the xv6 teachi
 tags = ["Operating Systems", "C", "xv6", "Systems Programming"]
 
 [[sections.items]]
+title = "Yet Another C Compiler"
+subtitle = "BUET — Compiler Sessional"
+date = "2022"
+content = """
+Built a C compiler with a lexer, parser, semantic analysis, and code generation, for the BUET Compiler Sessional.
+
+**Links:** [GitHub](https://github.com/kawshikbuet17/CSE-310-Compiler-Sessional)
+"""
+tags = ["Compilers", "C++", "Flex", "Bison", "CMake"]
+
+[[sections.items]]
 title = "Computer Security — AES/RSA, Buffer Overflow & Morris Worm"
 subtitle = "BUET — Computer Security Sessional"
 date = "2023"
