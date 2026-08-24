@@ -40,3 +40,8 @@
 - Successfully guided 20+ students to secure admission in top universities in Bangladesh with noteworthy ranks
 - Specialized in competitive exam preparation for BUET, Medical Colleges, and University of Dhaka admissions
 - Continue tutoring students on a periodic basis alongside professional work
+
+## Honors and Awards
+
+- **Salary Increment for Outstanding Performance** - Recognized with a salary increment at REVE Systems for outstanding performance (December 2024)
+- **Samsung R&D Institute Bangladesh Offer** - Received a job offer from Samsung R&D Institute Bangladesh (2023)

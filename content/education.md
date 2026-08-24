@@ -39,8 +39,6 @@ Location: Gazipur, Bangladesh
 
 ## Honors and Awards
 
-- **Salary Increment for Outstanding Performance** - Recognized with a salary increment at REVE Systems for outstanding performance (January 2025)
-- **Samsung R&D Institute Bangladesh Offer** - Received a job offer from Samsung R&D Institute Bangladesh (2023)
 - **Naogaon Govt. KD School Admission** - Ranked 5th in the admission test (2007) of Naogaon Govt. KD School, the best government school in Naogaon District
 - **Naogaon Government Zilla School Admission** - Ranked top 10 in the admission test (2007) of Naogaon Government Zilla School
 - **Board Scholarship** - Primary Education Completion (PEC) examination (2009)

@@ -20,6 +20,20 @@
   status={submitted}
 }
 
+@article{paul2026bengali,
+  selected={true},
+  title={Building and Evaluating a Synthetic Bengali Speech Resource for Telecom Customer Care},
+  author={Paul, Kawshik Kumar and Fuji, Md. Nafiul Alam},
+  journal={arXiv preprint arXiv:2608.20346},
+  year={2026},
+  doi={10.48550/arXiv.2608.20346},
+  url={https://arxiv.org/abs/2608.20346},
+  note={R&D work conducted at REVE Systems. Co-authored with Md. Nafiul Alam Fuji.},
+  abstract={Speech systems used in customer-facing applications often require domain-specific language coverage. We present a synthetic Bengali speech dataset for telecom customer-care scenarios. The dataset contains 10,000 audio-text pairs, approximately 26.82 hours of 24 kHz speech, and predefined train, validation, and test splits of 9,000, 500, and 500 examples. It is publicly released on Hugging Face under the CC-BY-4.0 license. The speech was generated with OmniVoice in voice-cloning mode using a real female reference recording and transcript, with bfloat16 precision, 16 diffusion sampling steps, and a speaking-rate control value of 1.0. Along with the original Bengali text, the dataset provides a normalized transcript field designed for ASR/STT training and evaluation. We report an automatic intelligibility check over all 10,000 samples using a domain-adapted Whisper ASR model fine-tuned from bengaliAI/tugstugi_bengaliai-regional-asr_whisper-medium, along with a manual listening check on selected samples. The evaluation gives an average WER of 2.54%, an average CER of 0.59%, and median WER and CER values of 0.00%. These results suggest strong text-audio consistency under the selected automatic evaluation pipeline, while the paper also discusses the limitations of synthetic speech and STT-based evaluation.},
+  keywords={Speech Synthesis, TTS, Bengali, Low-Resource Speech, Dataset, ASR},
+  status={preprint}
+}
+
 @article{paul2026token,
   selected={true},
   title={Design, Security Analysis, and Evaluation of Endpoint-Aware Token-Bucket Rate Limiting for Web APIs Using Database-Configured Policies},
@@ -30,18 +44,6 @@
   note={R&D work conducted at REVE Systems.},
   abstract={A common recommendation for preventing brute-force authentication, credential stuffing, scraping, and resource exhaustion is rate limiting, a standard control for API availability and security. Uncertain semantics under horizontal scaling, proxy-induced client-IP ambiguity, unsafe identity binding, ambiguous policy resolution, canonicalization gaps in endpoint matching, and unbounded in-memory state are some of the reasons why deployments frequently fail. In this paper, we propose an endpoint-aware mechanism that uses token buckets with bounded bucket state to enforce per-endpoint RPS limits that are configured in a database and cached for low-latency lookup. The mechanism offers robust endpoint normalization (including an explicit UNKNOWN bucket for unmatched paths), deterministic policy precedence, strict identity validation, trusted-proxy boundaries for client IP extraction, optional per-endpoint cost weights, and operational controls for safe defaults and cache reload. We propose adversarial test suites and microbenchmarks for reproducible evaluation and structure a security analysis by attack surfaces (identity, endpoint normalization, state management, configuration, and distributed enforcement). Additionally, we compare the mechanism to commonly used gateway/edge systems and shared-state primitives, and place it within related work on distributed algorithms, adaptive controllers, overload control, and API rate-limit adoption patterns.},
   keywords={Web Security, Rate Limiting, API Security, Token Bucket},
-  status={preprint}
-}
-
-@article{romel2025patient,
-  title={A Patient-Centric Blockchain Framework for Secure Electronic Health Record Management: Decoupling Data Storage from Access Control},
-  author={Romel, Tanzim Hossain and Paul, Kawshik Kumar and Ruhan, Tanberul Islam and Mim, Maisha Rahman and Hoque, Abu Sayed Md. Latiful},
-  journal={arXiv preprint arXiv:2511.17464},
-  year={2025},
-  doi={10.48550/arXiv.2511.17464},
-  note={Co-authored with [Dr. Abu Sayed Md. Latiful Hoque](https://cse.buet.ac.bd/faculty/faculty_detail/asmlatifulhoque), Professor at BUET CSE — specialist in high-performance databases, data mining, health informatics, and e-learning systems.},
-  abstract={We present a patient-centric architecture for electronic health record (EHR) sharing that separates content storage from authorization and audit. Encrypted FHIR resources are stored off-chain; a public blockchain records only cryptographic commitments and patient-signed,time-bounded permissions using EIP-712. Keys are distributed via public-key wrapping, enabling storage providers to remain honest-but-curious without risking confidentiality. We formalize security goals (confidentiality, integrity, cryptographically attributable authorization, and auditability of authorization events) and provide a Solidity reference implementation deployed as single-patient contracts. On-chain costs for permission grants average 78,000 gas (L1), and end-to-end access latency for 1 MB records is 0.7-1.4 s (mean values for S3 and IPFS respectively), dominated by storage retrieval. Layer-2 deployment reduces gas usage by 10-13x, though data availability charges dominate actual costs. We discuss metadata privacy, key registry requirements, and regulatory considerations (HIPAA/GDPR), demonstrating a practical route to restoring patient control while preserving security properties required for sensitive clinical data.},
-  keywords={Blockchain, EHR, Healthcare, Security, Privacy},
   status={preprint}
 }
 
@@ -57,6 +59,18 @@
   status={preprint}
 }
 
+@article{romel2025patient,
+  title={A Patient-Centric Blockchain Framework for Secure Electronic Health Record Management: Decoupling Data Storage from Access Control},
+  author={Romel, Tanzim Hossain and Paul, Kawshik Kumar and Ruhan, Tanberul Islam and Mim, Maisha Rahman and Hoque, Abu Sayed Md. Latiful},
+  journal={arXiv preprint arXiv:2511.17464},
+  year={2025},
+  doi={10.48550/arXiv.2511.17464},
+  note={Co-authored with [Dr. Abu Sayed Md. Latiful Hoque](https://cse.buet.ac.bd/faculty/faculty_detail/asmlatifulhoque), Professor at BUET CSE — specialist in high-performance databases, data mining, health informatics, and e-learning systems.},
+  abstract={We present a patient-centric architecture for electronic health record (EHR) sharing that separates content storage from authorization and audit. Encrypted FHIR resources are stored off-chain; a public blockchain records only cryptographic commitments and patient-signed,time-bounded permissions using EIP-712. Keys are distributed via public-key wrapping, enabling storage providers to remain honest-but-curious without risking confidentiality. We formalize security goals (confidentiality, integrity, cryptographically attributable authorization, and auditability of authorization events) and provide a Solidity reference implementation deployed as single-patient contracts. On-chain costs for permission grants average 78,000 gas (L1), and end-to-end access latency for 1 MB records is 0.7-1.4 s (mean values for S3 and IPFS respectively), dominated by storage retrieval. Layer-2 deployment reduces gas usage by 10-13x, though data availability charges dominate actual costs. We discuss metadata privacy, key registry requirements, and regulatory considerations (HIPAA/GDPR), demonstrating a practical route to restoring patient control while preserving security properties required for sensitive clinical data.},
+  keywords={Blockchain, EHR, Healthcare, Security, Privacy},
+  status={preprint}
+}
+
 @article{paul2025low,
   title={A Low-Cost ATmega32-Based Embedded System for Automated Patient Queue and Health Data Management in Private Medical Chambers},
   author={Paul, Kawshik Kumar and Siyam, Mahdi Hasnat and Hossain, Khandokar Md Rahat},
@@ -68,4 +82,3 @@
   keywords={Embedded Systems, Healthcare, IoT, ATmega32, Automation},
   status={submitted}
 }
-
