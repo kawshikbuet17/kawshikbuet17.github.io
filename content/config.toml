@@ -1,14 +1,14 @@
 [site]
 title = "Kawshik Kumar Paul"
-description = "Software Engineer and Researcher looking to pursue higher studies (MS/PhD) in Artificial Intelligence and Software Engineering, with a focus on Large Language Models, NLP, Computer Vision, Speech AI, HCI, Computer Security, and Distributed Systems."
+description = "Senior Software Engineer and Researcher looking to pursue higher studies (MS/PhD) in Artificial Intelligence and Software Engineering, with a focus on Large Language Models, NLP, Computer Vision, Speech AI, HCI, Computer Security, and Distributed Systems."
 favicon = "/favicon.svg"
-last_updated = "August 2026"
+last_updated = "September 2026"
 
 [author]
 name = "Kawshik Kumar Paul"
-title = "Software Engineer | Researcher"
+title = "Senior Software Engineer | Researcher"
 institution = "B.Sc. Engg. (CSE), BUET"
-workplace = "Software Engineer at REVE Systems"
+workplace = "Senior Software Engineer at REVE Systems"
 avatar = "/bio.jpg"
 
 [social]

@@ -1,9 +1,10 @@
 ## Industry Experience
 
-### Software Engineer
+### Senior Software Engineer
 **REVE Systems** — Dhaka, Bangladesh  
 *[May 2024 – Present]*
 
+- Promoted to Senior Software Engineer in July 2026 (Software Engineer, May 2024 – June 2026)
 - Full-time software development role at REVE Systems
 - Working on [Airtel Advantage](https://airtel-advantage.airtel.in/) project - developing DID Numbering solutions
 - Contributing to [REVE Session Border Controller](https://www.revesoft.com/products/reve-session-border-controller) product development
@@ -43,5 +44,6 @@
 
 ## Honors and Awards
 
+- **Promotion to Senior Software Engineer** - Promoted to Senior Software Engineer at REVE Systems, with a salary increment, effective July 2026
 - **Salary Increment for Outstanding Performance** - Recognized with a salary increment at REVE Systems for outstanding performance (December 2024)
 - **Samsung R&D Institute Bangladesh Offer** - Received a job offer from Samsung R&D Institute Bangladesh (2023)

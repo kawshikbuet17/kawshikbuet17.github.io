@@ -5,7 +5,7 @@ Built with [PRISM](https://github.com/xyjoey/PRISM) - a modern, configurable per
 ## 👤 Author
 
 - **Name:** Kawshik Kumar Paul
-- **Role:** Software Engineer | Researcher
+- **Role:** Senior Software Engineer | Researcher
 - **Department:** Department of Computer Science and Engineering (CSE)
 - **Institution:** Bangladesh University of Engineering and Technology (BUET)
 - **Email:** kawshikbuet17@gmail.com
