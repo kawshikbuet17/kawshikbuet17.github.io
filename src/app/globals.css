@@ -144,7 +144,9 @@ html[data-locale^="zh"] {
 
 /* Dark mode styles */
 .dark {
-  --background: #0f172a;
+  /* Slightly deeper page ground than the #1e293b cards, so cards read as
+     elevated and body text sits on the darkest surface available. */
+  --background: #0b1220;
   --foreground: #f8fafc;
   
   /* Adjust colors for dark mode */
@@ -156,21 +158,23 @@ html[data-locale^="zh"] {
   --accent-dark: #d4a562;
   
   /* Dark mode glass effect */
-  --glass-bg: rgba(15, 23, 42, 0.8);
+  --glass-bg: rgba(11, 18, 32, 0.85);
   --glass-border: rgba(255, 255, 255, 0.1);
   --glass-shadow: rgba(0, 0, 0, 0.5);
   
-  /* Neutral colors for dark mode - properly inverted */
-  --neutral-50: #0f172a;
+  /* Neutral colors for dark mode - properly inverted.
+     300-500 double as body/secondary text on dark surfaces, so they are kept
+     light enough to clear WCAG AA against both #0b1220 and the #1e293b cards. */
+  --neutral-50: #0b1220;
   --neutral-100: #1e293b;
   --neutral-200: #334155;
-  --neutral-300: #475569;
-  --neutral-400: #64748b;
-  --neutral-500: #94a3b8;
+  --neutral-300: #a4b1c4;
+  --neutral-400: #b8c3d3;
+  --neutral-500: #c6cfdc;
   --neutral-600: #cbd5e1;
   --neutral-700: #e2e8f0;
   --neutral-800: #1e293b;
-  --neutral-900: #0f172a;
+  --neutral-900: #0b1220;
 }
 
 
@@ -188,6 +192,14 @@ body {
   font-weight: 400;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Light text on a dark ground already looks optically thinner than the same
+   glyphs inverted, and grayscale antialiasing thins it further. Let the OS
+   render dark-mode text at its normal weight instead. */
+.dark body {
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 /* Typography utilities */
@@ -242,11 +254,11 @@ body {
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  background: var(--neutral-600);
+  background: var(--neutral-200);
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  background: var(--neutral-500);
+  background: var(--neutral-300);
 }
 
 /* Card background utility */

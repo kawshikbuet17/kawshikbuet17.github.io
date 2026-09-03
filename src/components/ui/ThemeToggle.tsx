@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import type { ReactNode } from 'react';
 import { motion } from 'framer-motion';
-import { SunIcon, MoonIcon, ComputerDesktopIcon } from '@heroicons/react/24/outline';
+import { SunIcon, MoonIcon } from '@heroicons/react/24/outline';
 import { useThemeStore, type Theme } from '@/lib/stores/themeStore';
 import { useMessages } from '@/lib/i18n/useMessages';
 import { cn } from '@/lib/utils';
@@ -18,11 +18,6 @@ function useThemeOptions(): ThemeOption[] {
   const messages = useMessages();
 
   return [
-    {
-      value: 'system',
-      label: messages.theme.system,
-      icon: <ComputerDesktopIcon className="h-4 w-4" />,
-    },
     {
       value: 'light',
       label: messages.theme.light,
@@ -64,10 +59,7 @@ export function ThemeToggle() {
         type="button"
         onMouseDown={(e) => e.preventDefault()}
         onClick={() => {
-          const order: Theme[] = ['system', 'light', 'dark'];
-          const index = order.indexOf(theme);
-          const next = order[(index + 1) % order.length];
-          setTheme(next);
+          setTheme(theme === 'dark' ? 'light' : 'dark');
         }}
         className={cn(
           'flex items-center justify-center w-10 h-10 rounded-lg',
@@ -84,9 +76,7 @@ export function ThemeToggle() {
           animate={{ rotate: 0, opacity: 1 }}
           transition={{ duration: 0.3 }}
         >
-          {theme === 'system' ? (
-            <ComputerDesktopIcon className="h-4 w-4" />
-          ) : theme === 'dark' ? (
+          {theme === 'dark' ? (
             <MoonIcon className="h-4 w-4" />
           ) : (
             <SunIcon className="h-4 w-4" />

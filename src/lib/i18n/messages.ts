@@ -7,7 +7,6 @@ export interface LocaleMessages {
     openMainMenu: string;
   };
   theme: {
-    system: string;
     light: string;
     dark: string;
     currentTheme: string;
@@ -57,11 +56,10 @@ const en: LocaleMessages = {
     openMainMenu: 'Open main menu',
   },
   theme: {
-    system: 'System',
     light: 'Light',
     dark: 'Dark',
     currentTheme: 'Current theme',
-    cycleTheme: 'Click to cycle theme',
+    cycleTheme: 'Click to switch theme',
   },
   profile: {
     email: 'Email',
@@ -107,7 +105,6 @@ const zh: LocaleMessages = {
     openMainMenu: '打开主菜单',
   },
   theme: {
-    system: '跟随系统',
     light: '浅色',
     dark: '深色',
     currentTheme: '当前主题',
